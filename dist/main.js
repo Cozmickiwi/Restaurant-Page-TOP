@@ -1,0 +1,1 @@
+console.log("Hello World!!"),document.body.appendChild(function(){const e=document.getElementById("content"),n=document.createElement("p");return n.textContent="Hey!",e.appendChild(n),e}());
