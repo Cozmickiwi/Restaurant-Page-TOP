@@ -125,3 +125,27 @@ body {
     margin-bottom: 0;
 }
 
+.tranLeftClass {
+    animation-name: transitionLeft;
+    animation-duration: 1.5s;
+    animation-iteration-count: 1;
+    animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+@keyframes transitionLeft {
+    0%{
+        scale: 100%;
+    }
+    10%{
+        scale: 95%;
+        transform: translateX(-5vw);
+    }
+    15%{
+        scale: 90%;
+        transform: translateX(-15vw);
+    }
+    100%{
+        transform: translateX(-100vw);
+        scale: 80%;
+    }
+}

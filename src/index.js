@@ -70,8 +70,16 @@ function component() {
             bodyContainer.appendChild(p4);
             bodyContainer.appendChild(p5);
             bodyContainer.appendChild(p6);
+
         }
         bodyContent();
+        document.querySelector('.menu').addEventListener('click', () => {
+            bodyContainer.classList.toggle('tranLeftClass');
+            setTimeout(() =>{
+                bodyContainer.classList.toggle('tranLeftClass');
+            }, 1000)
+            
+        })
         return(bodyContainer);
     }
     container.appendChild(body());
