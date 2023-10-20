@@ -1,7 +1,23 @@
+@font-face {
+    font-family: Mega;
+    src: url(./fonts/MEGAN___.TTF);
+}
+
+@font-face {
+    font-family: Martian;
+    src: url(./fonts/MartianMono-VariableFont_wdth\,wght.ttf);
+}
+
+@font-face {
+    font-family: Lexend;
+    src: url(./fonts/LexendMega-VariableFont_wght.ttf);
+}
+
 body {
     width: 100vw;
     height: 100vh;
     margin: 0;
+    background-color: #82d9fb7f;
 }
 
 #content {
@@ -12,6 +28,100 @@ body {
 }
 
 .header {
-    font-size: 2em;
+    display: grid;
+    font-size: 1.2em;
+    grid-row: 1;
+    grid-template-columns: 1.5fr 1fr repeat(4, 1fr);
+    grid-template-rows: 1fr;
+    max-height: 100px;
+    overflow: visible;
+    font-family: Mega;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+.logo {
+    grid-row: 1;
+    width: 45%;
+    overflow: hidden;
+    position: relative;
+    top: 15px;
+    left: 35px;
+}
+
+.pagesContainer {
+    grid-column: 3 / 7;
+    z-index: 0;
+    width: 100%;
+    height: 100%;
+    grid-row: 1;
+    background-color: #76dbf0e7;
+    box-shadow: 5px 5px black;
+    border-bottom-left-radius: 10px;
+    border-top-left-radius: 10px;
+    outline: 3px solid;
+}
+
+.home {
+    grid-column: 3;
+}
+.menu {
+    grid-column: 4;
+}
+.contact {
+    grid-column: 5;
+}
+.about {
+    grid-column: 6;
+}
+
+.header > div:not(.pagesContainer) {
+    display: flex;
+    width: 60%;
+    height: 60%;
+    align-self: center;
+    justify-self: center;
+    align-items: center;
+    justify-content: center;
+    grid-row: 1;
+    z-index: 1;
+    background-color: #ffa07a;
+    border: 3px solid black;
+    border-radius: 10px;
+    box-shadow: 2px 2px black;
+    user-select: none;
+    
+}
+
+.header > div:not(.pagesContainer):active {
+    position: relative;
+    left: 1px;
+    top: 1px;
+    box-shadow: 1px 1px black;
+    scale: 99.8%;
+}
+
+.bodyContainer {
+    width: 60%;
+    padding-left: 50px;
+    padding-right: 50px;
+    height: 85%;
+    font-size: 1em;
+    font-weight: 500;
+    letter-spacing: -1px;
+    align-self: center;
+    justify-self: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-family: Lexend;
+    background-color: #c3a1ff50;
+    
+    border-radius: 30px;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+
+.bodyContainer > p {
+    margin-bottom: 0;
 }
 
