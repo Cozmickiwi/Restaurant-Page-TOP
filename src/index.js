@@ -13,7 +13,7 @@ function component() {
         myLogo.src = Logo;
         myLogo.className = 'logo';
         headerContainer.appendChild(myLogo);
-        //header page links
+        //header page links:
         function pages(){
             const pagesContainer = document.createElement('div');
             pagesContainer.className = 'pagesContainer';
