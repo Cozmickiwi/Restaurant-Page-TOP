@@ -136,14 +136,6 @@ body {
     0%{
         scale: 100%;
     }
-    10%{
-        scale: 95%;
-        transform: translateX(-5vw);
-    }
-    15%{
-        scale: 90%;
-        transform: translateX(-15vw);
-    }
     100%{
         transform: translateX(-100vw);
         scale: 80%;
