@@ -194,7 +194,7 @@ function component() {
                 }, 1000)
                 
             }
-            else if(desPage < curPage){
+            else if(desPage < curPage && desPage > 0){
                 bodyContainer.classList.toggle('tranRightClass');
                 setTimeout(() => {
                     bodyContainer.innerHTML = "";
